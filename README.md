@@ -1,2 +1,10 @@
-# PayGuard-Verified-Multi-Employer-Payroll
-Multi-agent payroll for multiple employers: a Preparer agent builds each employer’s packet, an independent Verifier agent rechecks it, and a human approves before deterministic code pays. Approvals are bound to the exact packet, and each employer’s funds stay separate.
+# PayGuard-Verified-Multi-Employer-Payroll-with-human-final-approval
+
+PayGuard runs payroll for several employers at once, with AI agents doing the preparation and checking and a human giving the final approval before any money moves.
+
+Prepare: a Preparer Agent builds a payroll packet per employer from stored records.
+Verify: an independent Verifier Agent rechecks each packet against source data and flags anomalies.
+Approve: a human approves or rejects each employer’s packet.
+Execute: deterministic code pays only after approval, and the approval is tied to the exact packet.
+Protect funds: every payout is checked so one employer’s money is never used for another.
+Audit: every step is logged.
